@@ -57,6 +57,7 @@ if (arg === "-noscrape") {
 
         $(".table tbody tr").each((i, el) => {
           results[i] = {
+            category: links[listCounter].title,
             title: $(el)
               .find("a")
               .text()
